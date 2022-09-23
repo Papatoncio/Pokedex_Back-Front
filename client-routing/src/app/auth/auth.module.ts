@@ -1,18 +1,16 @@
+import { CommonModule } from "@angular/common";
 import { Component, NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { AuthRoutingModule } from "./auth-routing.module";
 import { CalisComponent } from "../components/calis/calis.component";
 import { LoginComponent } from "../components/login/login.component";
 
-const routes:Routes = [
-    {path: 'resgistro', component:CalisComponent},
-    {path: 'login', component:LoginComponent}
-];
-
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    declarations: [CalisComponent, LoginComponent],
+    imports: [CommonModule, FormsModule, AuthRoutingModule, HttpClientModule]
 })
 
-export class AppRoutingModule {
+export class AuthModule {
 
 }
