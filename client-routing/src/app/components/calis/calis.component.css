@@ -1,0 +1,126 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: white;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(silver);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: repeating-linear-gradient(to top left, rgb(237, 116, 255), transparent);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#animacionF {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+* h4{
+    font-family: "Nunito";
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+* p{
+    font-family: "Nunito";
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+* a{
+    font-family: "Nunito";
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+* button{
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+
+  @keyframes animate{
+    0%{
+        transform: scaleX(0%);
+        transform: scaleY(0%);
+    }
+
+    100%{
+        transform: scaleX(100%);
+        transform: scaleY(100%);
+    }
+}
+
+#animacionExpand{
+    animation-name: animate;
+    animation-duration: 2s;
+}
